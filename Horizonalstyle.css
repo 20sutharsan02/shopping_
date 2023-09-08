@@ -1,0 +1,71 @@
+.horizontal-scroll-container {
+  padding: 40px;
+    box-sizing: border-box;
+
+}
+h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.scroll-image {
+width: 200px; 
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
+margin-bottom: 10px;
+vertical-align: middle;
+margin-top: 8px;
+margin-right: 10px; 
+}
+.imdset::-webkit-scrollbar{
+  width:0px
+}
+.imdset::-webkit-scrollbar-track{
+  background-color: aliceblue;
+}
+.imdset::-webkit-scrollbar-thumb{
+  background-color: aliceblue;
+}
+.imdset::-webkit-scrollbar-thumb:hover{
+  background-color: aliceblue;
+}
+.imdset{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+  text-align: center;
+  justify-content: space-between;
+scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  transform: translateZ(0);
+  box-sizing: border-box;
+}
+.leet h2{ 
+  text-align: center;
+
+}
+.leet{
+  padding-left: 20px;
+}
+@media screen and (max-width:840px)
+ {
+    .leet
+    {
+        flex:50%;
+        max-width:50%;  
+    }
+    
+ }
+ 
+ @media screen and (max-width:575px)
+ {
+  .leet{ 
+    flex:100%;
+    max-width: 100%;
+  }
+  
+ }
